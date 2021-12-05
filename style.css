@@ -146,9 +146,6 @@ label {
   filter: brightness(120%);
 }
 @media screen and (max-width: 600px) {
-  body {
-    align-items: stretch;
-  }
   .container {
     flex-grow: 1;
   }
