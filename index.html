@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/ecaaef9bab.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Validate Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <h2 class="title">Sign Up</h2>
+      <p class="info">
+        please fill out the form below to get all update and access countless
+        features (Note. all fields are mendatory)
+      </p> -->
+      <form action="" class="myform" novalidate>
+        <!-- Name -->
+        <div class="form-input">
+          <label for="name">Name</label>
+          <div class="inputs">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              data-name="name"
+              class="field name"
+              placeholder="enter your name"
+            />
+            <i class="fas fa-exclamation-circle error-symbol symbol"></i>
+            <i class="fas fa-check-circle success-symbol symbol"></i>
+          </div>
+          <p class="message"></p>
+        </div>
+
+        <!--  Email -->
+        <div class="form-input">
+          <label for="email">Email</label>
+          <div class="inputs">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              data-name="email"
+              class="field email"
+              placeholder="enter your email"
+            />
+            <i class="fas fa-exclamation-circle error-symbol symbol"></i>
+            <i class="fas fa-check-circle success-symbol symbol"></i>
+          </div>
+          <p class="message"></p>
+        </div>
+
+        <!-- Password -->
+        <div class="form-input">
+          <div class="visible-password">
+            <label for="password">Password</label>
+            <i class="fas fa-eye eye peye"></i>
+          </div>
+          <div class="inputs">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              data-name="password"
+              class="field password"
+              placeholder="enter your password"
+            />
+            <i class="fas fa-exclamation-circle error-symbol symbol"></i>
+            <i class="fas fa-check-circle success-symbol symbol"></i>
+          </div>
+          <p class="message"></p>
+        </div>
+
+        <!-- confirm password -->
+        <div class="form-input">
+          <div class="visible-password">
+            <label for="c-p">Confirm password</label>
+            <i class="fas fa-eye eye ceye"></i>
+          </div>
+
+          <div class="inputs">
+            <input
+              type="password"
+              name="email"
+              id="c-p"
+              data-name="confirm password"
+              class="field cpassword"
+              placeholder="enter your confirm password"
+            />
+            <i class="fas fa-exclamation-circle error-symbol symbol"></i>
+            <i class="fas fa-check-circle success-symbol symbol"></i>
+          </div>
+          <p class="message"></p>
+        </div>
+
+        <!-- About Yourself -->
+        <div class="form-input">
+          <label for="ay">About Yourself</label>
+          <div class="inputs">
+            <textarea
+              name="about-user"
+              id="ay"
+              class="field about-yourself"
+              placeholder="enter about yourself"
+              data-name="About yourself"
+            ></textarea>
+            <i class="fas fa-exclamation-circle error-symbol symbol"></i>
+            <i class="fas fa-check-circle success-symbol symbol"></i>
+          </div>
+          <div class="charcter-long">
+            <p class="message"></p>
+            <p class="written">
+              <span class="done">0</span>/<span class="target">30</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-input">
+          <input type="submit" value="Sign up" class="btn" />
+        </div>
+      </form>
+    </div>
+    <script src="validate.js"></script>
+  </body>
+</html>

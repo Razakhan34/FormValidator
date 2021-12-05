@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      h1 {
+        font-size: 50px;
+        color: white;
+        text-shadow: 1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome To My Page <span class="name"></span></h1>
+    <script>
+      const name = document.querySelector(".name");
+      name.innerHTML = localStorage.getItem("name");
+    </script>
+  </body>
+</html>

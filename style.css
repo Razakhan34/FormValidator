@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  overflow: auto;
+}
+.container {
+  background-color: #fff;
+  width: 600px;
+  max-width: 600px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2),
+    2px 0px 12px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  padding: 10px;
+  border: 3px solid #000;
+}
+.title {
+  font-size: 32px;
+  margin: 10px 0px;
+  color: rgb(5, 95, 65);
+}
+.info {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.form-input {
+  margin-bottom: 8px;
+}
+.form-input:last-child {
+  margin-bottom: 0;
+}
+.inputs {
+  margin: 3px 0px;
+  position: relative;
+}
+.visible-password {
+  display: flex;
+  justify-content: space-between;
+}
+.eye {
+  color: #c3c2c2;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+label {
+  font-size: 0.9rem;
+  color: #222;
+}
+::placeholder {
+  color: #444;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-family: monospace;
+  font-weight: normal;
+}
+.field {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  padding: 7px;
+  padding-right: 30px;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  transition: border-color 0.6s ease;
+}
+
+.field:focus {
+  outline: none;
+  border-color: #000;
+}
+/* for error and success */
+.symbol {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: none;
+}
+.error-symbol {
+  color: red;
+}
+.success-symbol {
+  color: green;
+}
+.error .message {
+  font-size: 0.7rem;
+  color: red;
+}
+.error .field {
+  border-color: red;
+}
+.error .inputs .error-symbol {
+  display: block;
+}
+.success .message {
+  display: none;
+}
+.success .field {
+  border-color: green;
+}
+.success .inputs .success-symbol {
+  display: block;
+}
+
+.about-yourself {
+  resize: vertical;
+  height: 100px;
+  font-family: inherit;
+}
+.charcter-long {
+  display: flex;
+  justify-content: space-between;
+}
+.written {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.btn {
+  display: block;
+  width: 100%;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 0px;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 4px;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:hover {
+  filter: brightness(120%);
+}
+@media screen and (max-width: 600px) {
+  body {
+    align-items: stretch;
+  }
+  .container {
+    flex-grow: 1;
+  }
+}
